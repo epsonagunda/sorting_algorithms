@@ -5,6 +5,22 @@
 #include <stddef.h>
 #include <stdlib.h>
 
+
+/**
+ * enum bool_e - manual definition of booleans, in case C99 stdbool.h not
+ * available
+ * @false: logical 0
+ * @true: logical 1
+ */
+typedef enum bool_e
+{
+	false = 0,
+	true
+} bool;
+
+
+
+
 /**
  * struct listint_s - Doubly linked list node
  *
